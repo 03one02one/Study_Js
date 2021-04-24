@@ -8,5 +8,5 @@ function solution(n) {
     return answer;
 }
 
-console.log(solution(n));
+console.log(solution(12));
 console.log(solution(5))
