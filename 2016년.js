@@ -1,8 +1,7 @@
 function solution(a, b) {
-    answer = '';
-    var week = ['SUN', 'MON ', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-    var today = new Date('2016-'+a+'-'+b).getDay();
-    answer = week[today];
+    var answer = '';
+    var date = new Date(2016, (a-1), b);
+    answer = date.toString().slice(0, 3).toUpperCase();
     return answer;
 }
 
